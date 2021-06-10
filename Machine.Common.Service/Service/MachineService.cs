@@ -26,13 +26,13 @@ namespace Machine.Common.Service
 						var result = new MachineValidationResult();
 						if (MaximumMilkCapacity < milkUnits)
 						{
-								result.Message += "The machines maximum bean capacity is less than the required amaount to make the drink " + Environment.NewLine;
+								result.Message += "The machines maximum bean capacity is less than the required amount to make the drink " + Environment.NewLine;
 								result.Result = false;
 								return result;
 						}
 						if (MaximumBeansCapacity < numberOfBeans)
 						{
-								result.Message += "The maximum milk capacity is less than the required amaount to make the drink ";
+								result.Message += "The maximum milk capacity is less than the required amount to make the drink ";
 								result.Result = false;
 								return result;
 						}
